@@ -4,6 +4,9 @@ import ru.suhanov.forshapes.Point;
 
 
 public class sh_Triangle extends Shape{
+    public Point[] edges;
+    public double side2len;
+    public double side3len;
 
     public sh_Triangle(Point[] points){
         this.edges=points;

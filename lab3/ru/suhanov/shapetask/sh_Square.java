@@ -3,6 +3,7 @@ import ru.suhanov.forshapes.Line;
 import ru.suhanov.forshapes.Point;
 
 public class sh_Square extends Shape {
+    public Point[] edges;
 
     public sh_Square(Point leftup, int eqsidelen){
         this.startpoint=leftup;
