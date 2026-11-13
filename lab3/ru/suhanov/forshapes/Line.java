@@ -38,13 +38,23 @@ public class Line implements lenmeasure,intochain {
         return new Line(p_arr);
     }
 
-    //@Override
-    public boolean equals(Line line){
-        if (this.p_arr==line.p_arr){
-            return true;
-        }
+    @Override
+public boolean equals(Object obj) {
+    if (this == obj) {
+        return true;
+    }
+
+    if (!(obj instanceof Line)) {
         return false;
     }
+
+    Line other = (Line) obj;
+
+    if (this.p_arr == other.p_arr) {
+        return true;
+    } else
+        return false;
+}
 
     public String toString(){
         return "Ломаная с углами в точках "+Arrays.toString(p_arr)+", общая длина: "+measure();
